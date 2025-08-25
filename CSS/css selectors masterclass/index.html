@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Masterclass</title>
+    <style>
+        /* Element Selector */
+        div {
+            color: blue;
+            background-color: yellow;
+        }
+
+        /* Class Selector */
+        .red {
+            color: red;
+            background-color: black;
+        }
+
+        /* ID Selector */
+        #green {
+            color: green;
+            background-color: pink;
+        }
+
+        /* child selector*/
+        div>p {
+            color: orange;
+            background-color: grey;
+        }
+
+        /* Descendant selector */
+       span p {
+            color: brown;
+            background-color: lightgrey;
+        }
+        /* universal selector */
+        * {
+             pad: 0;
+             margin: 0;
+        }
+        /* this will be applied for all selectors unless you use break */
+        
+
+        /* pseudo selector*/
+        a:visited{
+            color: purple;
+        } 
+        a:link{
+            color: red;
+        }
+        a:active{
+            color: green;
+            background-color: yellow;
+        }
+        /* Active means while clicking it means in the present but u have to click*/
+        a:hover{
+            color: blue;
+            background-color: lightgrey;
+        }
+        /* same as active but u doesn't have to click */
+        div:hover{
+            color: white;
+            background-color: black;
+        }
+        div:active{
+            color: yellow;
+            background-color: green;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+   
+   
+    <div>I am a element selector</div>
+    <div class="red">I am a class selector</div>
+    <div id="green">Iam a id selector</div>
+    <div>
+        <p>I am a child selector</p>
+        <!-- this will apply only if the p is direct child of div -->
+    </div>
+    <div>
+        <span>
+            <p>I am a descendant selector</p>
+            <!--This will apply everywhere the p is inside span may be inside div like here -->
+            <!-- this is the difference between child and descendant selector -->
+        </span>
+    </div>
+    <a href="https://www.google.com">open google</a>
+    <!-- pseudo selector is used to style a tag by a:visited if u have visited google-->
+    <a href="https://www.facebook.com">open Facebook</a>
+    <!-- used if u have not yet visited and it can be used only once and used with a link{} -->
+     
+</body>
+
+</html>
