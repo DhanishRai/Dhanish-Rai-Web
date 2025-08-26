@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >CSS Exercise </title>
+    <style>
+       
+        div>p:first-child {
+            background-color: yellow;
+            color: red;
+        }
+         div>p{
+            color: white;
+            background-color: blue;
+         }
+        
+         /* div>p:not(:first-child){
+            color: white;
+            background-color: blue;
+         } */
+        div {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid black;
+            width: 500px;
+            box-sizing: border-box;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Write html and css code to style a paragraph inside a div which contains 5 other paragraphs. The first para must have background color yelow and the text color red and the other paras should have the bg color blue and the text color white. The html is written below for your reference.Do not change the html -->
+     <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente alias iusto, quas sint, hic nisi quasi placeat aliquam esse repudiandae praesentium inventore tempora?</p>
+        <p>I am a para</p>
+        <p>I am another para</p>
+     </div>
+     <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente alias iusto, quas sint, hic nisi quasi placeat aliquam esse repudiandae praesentium inventore tempora?</p>
+        <p>I am a para</p>
+        <p>I am another para</p>
+     </div>
+</body>
+</html>
