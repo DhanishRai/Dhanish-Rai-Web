@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model - Margin ,Padding and Borders</title>
+    <style>
+          .box{
+            background-color: aqua;
+          }
+          *{
+            margin: 0;
+            padding: 0;
+            
+          }
+          .box1{
+            color: green;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid red;
+            height: 100px;
+            width: 500px;
+            box-sizing: border-box;
+            /* box-sizing :border-box means total height and width including border and padding so always use this to get correct measurements */
+          }
+          .box2{
+            color: blue;
+          }
+
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am a box</div>
+</body>
+</html>
