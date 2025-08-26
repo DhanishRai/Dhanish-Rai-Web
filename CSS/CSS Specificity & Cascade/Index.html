@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        /* Specificity of universal selector is 0 */
+        *{
+            color: aqua;
+        }
+        /*Specificity of this selector is 1 */
+        div{
+            color: navajowhite;
+        }
+        /* Specificity of class selector is 10*/
+     
+        .red{
+            color: red;
+        }
+        /* Specificity of class selector is 10*/
+        .green{
+            color: green;
+        }
+        /* Specificity of class selector is 10*/
+        .blue{
+            color: blue;
+        }
+        /* Specificity of ID selector or class attribute selector is 10*/
+        [data="attribute"]{
+           background-color: yellow;
+        }
+        /* Specificity of inline style is 1000 */
+
+
+   
+    </style>
+
+</head>
+
+<body>
+    <!-- First pririty will be given to the inline style and then to ID selector then class of attribute selector and then to universal selector -->
+    <div !important style="color: violet;" class="red green blue">
+        CSS Specificity  & Cascade 
+    </div>
+    <div  class="red green blue" data="attribute">
+        CSS Specificity  & Cascade 
+        
+    </div>
+   
+</body>
+
+</html>

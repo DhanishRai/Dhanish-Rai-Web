@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Selector</title>
+    <style>
+        /* Specificity of universal selector is 0*/
+        *{
+            color: aqua;
+        }
+        /*Specificity of this selector is 1+ */
+        div{
+            color: navajowhite;
+        }
+        /* Specificity of class selector is 1+ 10*/
+     
+       h1.red{
+            color: red;
+        }
+        /* Specificity of class selector is 1+10*/
+        h1.green{
+            color: green;
+        }
+        /* Specificity of class selector is 1+10*/
+        h1.blue{
+            color: blue;
+        }
+        /* Specificity of ID selector or class attribute selector is 10*/
+       [data="attribute"]{
+           background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1 class="red green blue" data="attribute ">This is for Complex Selector</h1>
+    </div>
+</body>
+
+</html>
