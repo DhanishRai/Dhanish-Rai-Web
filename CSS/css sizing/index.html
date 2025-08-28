@@ -1,26 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css sizing</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        .box{
-            border: 2px solid black;
-            width: 960px;
+
+        .box {
+            border: 2px solid rgb(226, 10, 10);
+            /* width: 960px; */
+            width: 80vw;
+            margin: auto;
             background-color: rgb(10, 120, 217);
             box-sizing: border-box;
+            text-align: center
         }
 
+        .container {
+            border: 2px solid rgb(226, 10, 10);
+            /* width: 960px; */
+            width: 80vw;
+            height: 80vh;
+            margin: 23px auto;
+            /* margin:23px auto is the top down width */
+            font-size: 18px;
+            /* default font size is 16px */
+            background-color: rgb(10, 120, 217);
+            box-sizing: border-box;
+            
+        }
+        /* html{
+            font-size: 12px;
+        } */
+
+        .container p {
+            font-size: 2em;
+            /* em means multiplied. Means if the og size is given to a font then 2 em means multiply that size by two
+            /* font-size: 2rem; */
+            /* rem root em means it multiply html font size to 2 where if I write em instead of rem , first it will multiply the font size to 2 and again it will multiply the font size by two bcoz it's specified by html which the root*/
+            }
     </style>
 </head>
+
 <body>
     <div class="box">
         This is a box
     </div>
+    <!-- <span class="box">
+        I am a box
+       For inlines the margin : auto doesn't work and u can't even use width  
+    </span> -->
+    <div class="container">
+        <p>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi laboriosam iusto omnis non est
+            corporis
+            in repellat assumenda illo, neque id aut consectetur veniam ipsum qui. Beatae, itaque in ipsa dolorem magnam
+            tempore velit saepe cupiditate perspiciatis facere officiis quia voluptatum, corporis illo soluta.
+        </p>
+    </div>
 </body>
+
 </html>
