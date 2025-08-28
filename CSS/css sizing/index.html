@@ -24,16 +24,19 @@
         .container {
             border: 2px solid rgb(226, 10, 10);
             /* width: 960px; */
-            width: 80vw; 
-            height: 80vh;
+            width: 80vw;
+            /* height: 80vh; */
             margin: 23px auto;
+            min-height: 80vh;
             /* margin:23px auto is the top down width */
             font-size: 18px;
             /* default font size is 16px */
             background-color: rgb(10, 120, 217);
             box-sizing: border-box;
-            
+
+
         }
+
         /* html{
             font-size: 12px;
         } */
@@ -43,7 +46,13 @@
             /* em means multiplied. Means if the og size is given to a font then 2 em means multiply that size by two
             /* font-size: 2rem; */
             /* rem root em means it multiply html font size to 2 where if I write em instead of rem , first it will multiply the font size to 2 and again it will multiply the font size by two bcoz it's specified by html which the root*/
-            }
+            width: 50%;
+            /* this means the width of 50% of the parent means the div */
+            /* And if u use this where there is a paragraph inside to div then this will set the size of 2nd div because the parent for this p is 2nd div */
+            border: 2px solid black;
+        }
+
+ 
     </style>
 </head>
 
@@ -58,12 +67,10 @@
     <div class="container">
         <p>
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi laboriosam iusto omnis non est
-            corporis
-            in repellat assumenda illo, neque id aut consectetur veniam ipsum qui. Beatae, itaque in ipsa dolorem magnam
-            tempore velit saepe cupiditate perspiciatis facere officiis quia voluptatum, corporis illo soluta.
-        </p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam suscipit dolorem qui totam doloribus sunt dolorum dignissimos ratione sapiente alias ex dolores, voluptate iure pariatur, eligendi illum! Quis, hic quos.
+          <!-- If you want to test min height then set this to lorem 300 or something -->
     </div>
+   
 </body>
 
 </html>
