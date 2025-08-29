@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS display and property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            border: 2px solid black;
+            /* display: inline; */
+            display: inline-block;
+            padding: 30px;
+            margin: 23px;
+            text-align: center;
+        }
+        .box1{
+            /* display: none; */
+            /* this hides everything like space , box,content etc. */
+        
+            visibility: hidden;
+            /* It hides box and content but space is reserved  */
+        }
+
+    </style>
 </head>
+
 <body>
-    
+    <div class="box box1">
+        I am a block element and I will be converted to inline
+    </div>
+    <div class="box">Now we will also displayed in one line</div>
+
+    <span>I am inline</span>
+    <span>we both will be displayed in one line</span>
 </body>
+
 </html>
