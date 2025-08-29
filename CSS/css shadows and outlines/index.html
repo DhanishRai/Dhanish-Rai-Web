@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+    <style>
+        .box{
+            border: 2px solid bisque;
+            padding: 34px;
+            /* SYNTAX-  box-shadow: h-offset v-offset blur spread color inset; */
+            /* box-shadow: 10px 8px 5px #707070 inset; */
+            /* inset gets the shadow from inside */
+            box-shadow: 10px 8px 5px 10px #707070;
+            /* this is for outside shadow */
+            
+        }
+        .text-element{
+            text-shadow: 2px 2px 4px #ee0b0b;
+            border: 2px solid black;
+            outline: 2px solid brown;
+            outline-offset: 15px;
+        }
+        /* SYNTAX   outline: width style color */
+        /* Difference between Border and Outline is that it is not included in border box and its outside the border */
+        /* You can increase the outline width using outline offset but border can't be changed directly */
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <p class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam itaque praesentium nam quod distinctio tempora impedit quaerat eius minus maxime assumenda laborum molestias voluptates, hic beatae velit reiciendis, non perferendis modi saepe. Tempora, quidem.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut nihil sapiente beatae sunt debitis laudantium pariatur accusantium deleniti consequatur similique neque, animi provident.
+    </p>
+</body>
+</html>
