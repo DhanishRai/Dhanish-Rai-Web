@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title >CSS Exercise </title>
     <style>
-       
-        div>p:first-child {
-            background-color: yellow;
-            color: red;
-        }
-         div>p{
-            color: white;
-            background-color: blue;
-         }
+       p{
+        background-color: blue;
+        color: white;
+       }
+       div p:first-child{
+        background-color: yellow;
+        color: red;
+       }
+       div p:nth-child(2){
+        background-color: green; 
+       }
+       /* This is for 2nd child .If u give 3 then  its for the 3rd child */
         
-         /* div>p:not(:first-child){
-            color: white;
-            background-color: blue;
-         } */
+      
         div {
             margin: 20px;
             padding: 20px;
