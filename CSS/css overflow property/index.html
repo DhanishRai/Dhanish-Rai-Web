@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS overflow Property</title>
+    <style>
+        .box {
+            border: solid 2px black;
+            width: 200px;
+            height: 150px;
+            /* overflow: scroll; */
+            overflow: auto;
+            /* Difference between overflow auto and scroll is , scroll gives scroll bar if overflow doesn't exist also but auto provides scroll bar only  when overflow exist */
+            /* white-space: nowrap; */
+            /* gives horizontal scroll bar in one line */
+            /* text-overflow: ellipsis; */
+            /* gives 3 dots when overflow exist; */
+            /* overflow: hidden; */
+            /* overflow: clip; */
+            /* overflow clip and overflow hidden are same almost as they both hide oveflow */
+            overflow-y: scroll;
+            overflow-x: hidden;
+            /* this enables us to manualy set scroll bar between vertical or horizontal */
+            overflow: hidden scroll;
+            /* this can set scroll bar horizontally or vertically in one line */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sequi, exercitationem blanditiis suscipit
+        numquam veritatis ex sunt delectus culpa ab velit, cupiditate voluptatibus nemo maiores ut esse facere. Impedit,
+        ipsam! Odio officiis magni, totam commodi fugit, recusandae delectus hic molestias error saepe consectetur dolor
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsum asperiores repudiandae soluta aliquam vel
+        iusto expedita deserunt dolorem hic similique, tempora non repellendus consequatur aperiam labore accusantium
+        delectus minima sunt modi nulla eos! Officiis nihil suscipit, ad adipisci cumque rerum ipsum dolorem illo
+        quaerat.
+    </div>
+</body>
+
+</html>
