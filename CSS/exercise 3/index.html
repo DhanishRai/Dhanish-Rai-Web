@@ -4,8 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design this card</title>
+    <style>
+        *{
+            padding: 3px;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(173, 168, 168);
+        }
+        .card{
+            background-color: rgb(154, 129, 201);
+            width: 314px;
+            height: 404px;
+            border-radius: 12px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .card img{
+            height: 180px;
+            width: 308px;
+            border-radius: 8px;
+            padding: 3px;
+        }
+        .capsule{
+            padding: 15px 0 13px 12px;
+        }
+          .capsule span{
+            border: 2px solid black;
+           border-radius: 7px;
+            padding: 0 22px 0 25px;
+               /* syntax: top- right- bottom- left  */
+            box-shadow: 2px 2px 4px black;
+            /* text-shadow: 2px 2px 4px #ee0b0b; */
+          }
+       
+        .button{
+       
+        text-align: center;
+        
+        
+        
+    }
+    button{
+         border-radius: 8px;
+         padding: 0  12px 0 12px;
+         box-shadow: 2px 2px 4px black;
+         color: rgb(83, 58, 207);
+         background-color: rgb(194, 208, 221);
+         
+    }
+    h2 {
+        text-indent: 6px;
+        font-weight: 600;
+    }
+    p{
+        font-style: italic;
+        font-size: 18px ;
+    }
+   .button :hover{
+        color: black;
+        background-color: green;
+    }
+    </style>
 </head>
 <body>
+    <div class="card">
+       <img src="Fight Night.png" alt="samurai">
+       
+
+   
+    <div class="capsule">
+        <span class="like">Like</span>
+        <span class="share">Share</span>
+        <br>
+        
+    </div>
+     <div class="content">
+     <h2>Dhanish Rai</h2>
+     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam facilis ullam adipisci tenetur recusandae. Laboriosam rem quam reiciendis animi quo asperiores voluptate! Deleniti! Lo </p>
+
+     <div class="button">
+        <button>submit</button>
+     </div>
+
     
+       </div>
+    </div> 
 </body>
 </html>
