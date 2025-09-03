@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box::first-line{
+            color: blue;
+        } */
+.box::first-letter{
+    color:rgb(18, 236, 229);
+    background-color: blue;
+    font-size: 45px;
+}
+        .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+    a,p,.box,[data="primary"]{
+        /* a, p, .box its called grouping so that all can attain the property */
+        margin-top: 45px;
+        padding-top: 34px;
+        padding-bottom: 34px;
+        padding-left: 34px;
+        padding-right: 34px; 
+    }
+    .box:nth-child(even){
+      background-color:aqua ;
+    }
+.box:nth-last-child(1){
+    background-color: aquamarine;
+}
+.boxes::before{
+    content: "Dhanish Rai";
+    color: rgb(43, 108, 165);
+}
+.boxes::after{
+    content: "Dhanish Rai";
+    color: rgb(219, 131, 15);
+}
+
+::selection {
+    color: bisque;
+    background-color: violet;
+}
+/* You can even add some class in beggining so that it is applied only for that class */
+
+input::placeholder{
+    color: peru;
+   
+}
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data="primary" class="box">Heyy I am a Box</div>
+        <div class="box">Heyy I am a Box</div>
+        <div class="box">Heyy I am a Box</div>
+        <input type="text" placeholder="Enter your name">
+    </div>
+</body>
+</html>
