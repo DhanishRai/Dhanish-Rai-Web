@@ -16,7 +16,7 @@
             flex-wrap: wrap;
             align-content: center;
             /* for items in multiple lines */
-           flex-flow: row wrap-reverse;
+           /* flex-flow: row wrap-reverse; */
            /* gap: 17px; */
            row-gap: 34px;
            column-gap: 12px;
@@ -31,15 +31,36 @@
             border-radius: 7px;
             margin: 2px;
         }
+        .order1{
+            order: 1;
+        }
+        .order2{
+            order: 2;
+        }
+        .order3{
+            order: 3;
+        }
+        .order4{
+            order: 4;
+        }
+        .item{
+            flex-grow: 1;
+        }
+        .item1{
+            flex-grow: 4;
+            flex-shrink: 2;
+            /* it is a ability to shrink when the screen becomes small and to apply this the flex wrap should be off*/
+        }
     </style>
 </head>
 <body>
     <main>
         <div class="container">
-            <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
+            <div class="item item1">1</div>
+            <div class="item ">2</div>
+            <div class="item ">3</div>
+            <div class="item order1">4</div>
+            <!-- <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
@@ -84,8 +105,7 @@
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+            <div class="item"></div> -->
         </div>
     </main>
 </body>
