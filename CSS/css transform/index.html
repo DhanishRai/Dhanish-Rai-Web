@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transform</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+                    } */
+        .box {
+            height: 45px;
+            width: 45px;
+            background-color: coral;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: rotate(45deg); */
+            /* transform: rotateX(45deg); */
+            /* transform: rotateY(45deg); */
+            /* transform: rotateZ(45deg); */
+            /* transform: rotate(0.25turn); */
+            /* 0.25 turn the box 90 degree so for 0.5 turn the box 180 degree */
+            transform: scale(1.5);
+            /* scale (1.5) means the size increases by 1.5 times*/
+            /* transform: skew(25deg, 25deg); */
+
+            /* transform: skewY(25deg); */
+            /* transform: skewX(25deg); */
+
+
+            transform: translate(50px, 100px);
+            /* translate is to move the box in x and y axis*/
+
+
+
+            /* If you want to use multiple trasforms then you can do transform: translate() skew() scale(); just use space*/
+              /* transform: translate(-100%); */
+              /* used to hide nav bars and all */
+
+
+              transform: origin(100% 100%);
+              /* it is used to change the origin point of the box and to rotate it along the origin */
+                /* transform: origin(0 0);  in this the first 0 is to move the box in the origin to any point in the line and second zero is to rotate the box at that point*/
+        }
+        .container{
+            height: 80vh;
+            width: 80vw;
+            border: 2px solid black;;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+box
+        </div>
+    </div>
+</body>
+
+</html>
