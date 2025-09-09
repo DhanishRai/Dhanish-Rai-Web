@@ -12,18 +12,70 @@
             background-color: antiquewhite;
         }
 
-        .box { 
+        .box {
+            text-align: center;
             width: 8vw;
             height: 8vh;
             background-color: rgb(154, 192, 225);
+            animation: MyAnimation;
+            animation-duration: 4s;
+            /* animation-iteration-count: infinite; */
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            /* animation-direction: reverse; */
+            animation-direction: alternate;
+            /* animation-play-state: paused; */
+            /* animation-play-state: running; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation:MyAnimation 4s ease-in 4s infinite alternate-reverse ,
+                      MyAnimation2 4s ease-in 4s infinite alternate-reverse ; */
+            animation-fill-mode: forwards;  
+            /* Forwards means it stops at last and retains the property and if I give backwards it comes back to its original position which is starting position and it retains the property at the begining of the iteration and the property it retains is given in the .box it does not retain the property in the key frame but forwards retain the properties in the keyframes */
+            
         }
+
+        @keyframes MyAnimation {
+            from {
+                transform: translateX(0vw);
+                background-color: rgb(154, 192, 225);
+
+            }
+
+            to {
+                transform: translateX(72vw);
+                background-color: aqua;
+            }
+        }
+
+        @keyframes MyAnimation2 {
+           0%{
+            transform: rotate(90deg);
+           }
+           
+           20%{
+            transform: rotate(120deg);
+           }
+           
+           50%{
+            transform: rotate(230deg);
+           }
+           
+           80%{
+            transform: rotate(290deg);
+           }
+           
+          100%{
+            transform: rotate(360deg );
+          }
+
+           }
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="box">
-
+            Heyy buddy!!
         </div>
     </div>
 </body>
