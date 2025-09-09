@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css transition</title>
+    <style>
+        .container {
+            background-color: rgb(98, 104, 109);
+            height: 50vh;
+            width: 40vw; 
+            
+
+        }
+
+        .box {
+            background-color: #80bdf2;
+            height: 5vh;
+            width: 4vw;
+            /* transition-property: transform; */
+            transition-property: all;
+                
+            /* it can be tested like go to inspect and remove translate and press enter it will transform and chaneg color slowly and again apply the translate */
+            /* transition-property: background-color, transform; */
+            /* you can also use commas for instead of all */
+            transition-duration: 3s;
+            transition-timing-function: cubic-bezier(0.73, 0.44, 0.98, 0.99);
+            transition-delay: 2s;
+            /* to represent all in one line */
+            /* transition: all 3s ease-in 2s; */
+
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            background-color: black;
+            
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="box translate">
+
+        </div>
+    </div>
 </body>
+
 </html>
