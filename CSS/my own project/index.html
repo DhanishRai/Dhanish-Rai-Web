@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy website disign</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+   
+    height: 100%;
+    overflow: hidden; /* removes both scrollbars */
+    background: rgb(44, 46, 48);
+}
+
+     
+
+        input {
+            position: absolute;
+            margin: 25px 0 0 165px;  /* 👈 move bar down/right */
+            text-align: center;
+            height: 34px;
+            width: 60vw;
+            background-color: white;
+            border-radius: 15px;
+            border: none;
+            padding-right: 70px; /* space for icons */
+
+
+        }
+
+        .mic {
+            width: 15px;
+            height: 20px;
+            position: absolute;
+            /* place on top of input */
+            right: 210px;
+            /* adjust to match your margin */
+            top: 243px;
+            /* transform: translateY(-50%); */
+            cursor: pointer;
+        }
+        
+
+    .googlelens{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 170px;
+            top: 243px;
+            cursor: pointer;
+
+
+        }
+        .search{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 175px;
+            top: 243px;
+            cursor: pointer;
+        }
+
+      h1{
+        font-size: 70px;
+        text-align: center;
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 130px 0 0 0;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+          <h1>Google</h1>
+            <form>
+                <input type="text" name="search" placeholder="Search Google or type URL">
+                <img  class="mic" src="mic.png" alt="mic logo">
+                <img class="googlelens" src="google lens.png" alt="">
+                <img class="search" src="search.png" alt="search">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
