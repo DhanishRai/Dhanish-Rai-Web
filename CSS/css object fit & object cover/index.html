@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css onject fit and object cover</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            width: 445px;
+            height: 445px;
+            background-color: aliceblue;
+        }
+
+        img {
+            width: 445px;
+            height: 445px;
+            object-fit: fill;
+            /* default property of the object-fit is fill which fits the image in entire given height and width*/
+            object-fit: cover;
+            /* In cover the image gets cut and fitted in the container */
+            object-fit: contain;
+            /* In contain the image fits in the given container completely but there will some empty space in the container */
+            object-position: top right;
+            /* To display the required part of the picture  like botton left , botton right, top left etc.*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbnUheL6Gz4BOy-uR6-BZ8KFIYVVDn-18ciQ&s" alt="">
+    </div>
+</body>
+
+</html>
