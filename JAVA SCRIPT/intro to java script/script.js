@@ -1,3 +1,4 @@
+// this is for frontend 
 alert("Hello world")
 
 console.log("Code is running ...")
@@ -13,3 +14,4 @@ if(isTrue){
 else{
     console.log("Computer is not blasting")
 }
+document.title = "hey this is dhanish"
